@@ -1,0 +1,14 @@
+=== comandos angular ===
+
+Criar
+ng new meu-projeto
+
+Iniciar
+ng serve meu-projeto
+
+Build
+ng b
+
+novo componente
+ng generate --help
+ng g c title
