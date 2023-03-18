@@ -1,14 +1,41 @@
-=== comandos angular ===
+=== CLI ===
 
-Criar
+Criar progeto
 ng new meu-projeto
+ng new meu-projeto --styles=sass
 
 Iniciar
 ng serve meu-projeto
 
 Build
 ng b
+ng build --target=production --environment=prod
 
-novo componente
+Criar componentes
 ng generate --help
+
 ng g c title
+
+Preprocessador de CSS
+Sass ng set default.styleExt scss
+Less ng set default.styleExt less
+Stylus ng set default.styleExt styl
+
+ng link -> escanear código e encontrar algo fora de padrão
+// jasmine: biblioteca para teste
+ng test -> teste unitário, roda todos os arquivos .spac.test
+// 
+ng e2e -> teste de integração
+
+## Instalar bibliotecas
+nmp install --save bootstrap@next, ver documentação
+
+=== Diretivas ===
+
+
+
+
+
+
+
+
