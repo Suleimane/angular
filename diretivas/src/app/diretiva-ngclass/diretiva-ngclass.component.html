@@ -1,0 +1,24 @@
+<p>Diretiva ngClass</p>
+
+<h1>
+  <i class="glyphicon"
+    [class.glyphicon-star-empy]="!meuFavorito"
+    [class.glyphicon-star]="meuFavorito"
+    (click)="onCLick">
+  </i>
+  <i class="glyphicon"
+  [ngClass]="{
+    'class.glyphicon-star-empy': !meuFavorito,
+    'class.glyphicon-star': meuFavorito
+  }"
+  (click)="onCLick">
+</i>
+</h1>
+<h1>
+  <div [ngClass]="favorito">
+    <h1>*</h1>
+  </div>
+</h1>
+
+<br/>
+<button (click)="favoritar()">Favoritar</button>

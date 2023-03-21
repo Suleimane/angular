@@ -21,11 +21,19 @@
   Lista de cursos aqui.
 </div>
 
-<div [hidden]="mostrarCursos">
-  Não existe cursos a serem mostrados
+<div template="ngIf mostrarCursos">
+  Template
 </div>
 
-<br>
+<br/>
+
+<!--<template [ngIf]="mostrarCursos">
+  <div>Lista de cursos aqui.</div>
+</template>-->
+
+<br/>
 
 <button (click)="onMostrarCursos()">MOstrar ou esconder curso</button>
+
+
 
