@@ -1,0 +1,21 @@
+<p>Diretiva ngStyle</p>
+
+<button
+   [style.backgroundColor]="ativo ? 'blue' : 'gray'"
+   [style.color]="ativo ? 'white' : 'black'"
+   [style.fontWeight]="ativo ? 'bold' : 'normal'"
+   [style.fontSize]="tamanhoFonte + 'px'"
+   (click)="mudarEstilo()">
+   Mudar estilo
+</button>
+<br/>
+<button
+   [ngStyle]="{
+    'style.backgroundColor':(ativo ? 'blue' : 'gray'),
+    'style.color':(ativo ? 'white' : 'black'),
+    'style.fontWeight':(ativo ? 'bold' : 'normal'),
+    'style.fontSize':tamanhoFonte + 'px'
+   }"
+   (click)="mudarEstilo()">
+   Mudar estilo 2
+</button>
