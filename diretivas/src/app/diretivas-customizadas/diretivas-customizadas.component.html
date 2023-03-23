@@ -1,0 +1,25 @@
+<p fundoAmarelo>
+  Texto com fundo amarelo
+</p>
+
+<button fundoAmarelo>Fundo amarelo</button>
+
+<p highlightMouse>
+  Texto com highlight com mouse
+</p>
+
+<p highlight [defaultColor]="'grey'" [hightlightColor]="'red'">
+  Texto com highlight: Input e Property Binding
+</p>
+
+<div *ngIf="mostrarCursos">
+  Lista de cursos aqui.
+</div>
+
+<div *ngElse="mostrarCursos">
+  Não existe cursos a serem mostrados
+</div>
+
+<br/>
+
+<button (click)="onMostrarCursos()">Mostrar ou esconder curso</button>
